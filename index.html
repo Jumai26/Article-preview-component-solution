@@ -10,53 +10,58 @@
 
 <!-- the parent div houses the display, then there are two baby divs for the image and contents -->
 
-<body class="flex items-center justify-center h-max lg:h-screen lg:max-h-max bg-slate-200 ">
-    <div class="flex flex-col lg:flex-row items-center my-14 max-w-80 lg:min-w-[950px] justify-center ">
-        <div
-            class="flex flex-col lg:flex-row justify-center items-center bg-slate-50 rounded-md w-[90%] h-max gap-5 m-11">
-            <div>
-                <img src="./images/drawers.jpg" id="drawer" class="rounded-t-md lg:rounded-bl-md lg:rounded-tr-none">
-            </div>
-            <div>
+<body>
+    <main class="flex items-center justify-center h-max lg:h-screen lg:max-h-max bg-slate-200 ">
+        <div class="flex flex-col lg:flex-row items-center my-14 max-w-80 lg:min-w-[950px] justify-center ">
+            <div
+                class="flex flex-col lg:flex-row justify-center items-center bg-slate-50 rounded-md w-[90%] h-max gap-5 m-11">
                 <div>
-                    <h3 class="font-semibold text-base mt-7 mx-5">Shift the overall look and feel by adding these
-                        wonderful
-                        touches to furniture in your home</h3>
-                    <p class="font-normal text-sm m-5">Ever been in a room and felt like something was missing?
-                        Perhaps
-                        it felt slightly bare and uninviting. I’ve got some simple tips
-                        to help you make any room feel complete. </p>
+                    <img src="./images/drawers.jpg" id="drawer" alt="Drawers"
+                        class="rounded-t-md lg:rounded-bl-md lg:rounded-tr-none">
                 </div>
-                <div id="avatar" class="avatar flex flex-row justify-between mx-5 text-xl pt-3 ">
-                    <div class="flex flex-row">
-                        <img src="./images/avatar-michelle.jpg" id="avatar" class="w-11 h-11  rounded-full">
-                        <p class="ml-5 text-sm"><span class="font-bold">Michelle Appleton</span><br>28 Jun 2020</p>
-                    </div>
+                <div>
                     <div>
-                        <button id="add-btn">
-                            <img src="./images/icon-share.svg"
-                                class="my-2 w-8 h-8 ml-3 p-2 bg-slate-200 rounded-full hover:border-b-2 hover:border-gray-900 hover:bg-slate-300">
-                        </button>
+                        <h3 class="font-semibold text-base mt-7 mx-5">Shift the overall look and feel by adding these
+                            wonderful
+                            touches to furniture in your home</h3>
+                        <p class="font-normal text-sm m-5">Ever been in a room and felt like something was missing?
+                            Perhaps
+                            it felt slightly bare and uninviting. I’ve got some simple tips
+                            to help you make any room feel complete. </p>
                     </div>
-                </div>
-                <div id="social-media"
-                class="hidden social-media flex flex-row justify-between mx-5 text-xl bg-gray-700 rounded-full">
-                    <div class="flex flex-row items-center justify-center text-center gap-5 pr-6 rounded-md lg:bg-gray-700">
-                        <p class=" text-sm text-gray-400">SHARE</p>
-                        <img src="./images/icon-facebook.svg" class="w-4 h-4">
-                        <img src="./images/icon-twitter.svg" class="w-4 h-4">
-                        <img src="./images/icon-pinterest.svg" class="w-4 h-4">
+                    <div id="avatar" class="avatar flex flex-row justify-between mx-5 text-xl pt-3 ">
+                        <div class="flex flex-row">
+                            <img src="./images/avatar-michelle.jpg" alt="Profile Picture"
+                                class="w-11 h-11  rounded-full">
+                            <p class="ml-5 text-sm"><span class="font-bold">Michelle Appleton</span><br>28 Jun 2020</p>
+                        </div>
+                        <div>
+                            <button id="add-btn" aria-labelledby="addbtnimg">
+                                <img id="addbtnimg" src="./images/icon-share.svg" alt="enter button"
+                                    class="my-2 w-8 h-8 ml-3 p-2 bg-slate-200 rounded-full hover:border-b-2 hover:border-gray-900 hover:bg-slate-300">
+                            </button>
+                        </div>
                     </div>
-                    <div>
-                        <button id="remove-btn">
-                            <img src="./images/icon-share.svg"
-                                class="my-2 w-8 h-8 p-2 bg-slate-200 rounded-full hover:border-b-2 hover:border-gray-900 hover:bg-slate-300">
-                        </button>
+                    <div id="social-media"
+                        class="hidden social-media flex flex-row justify-between mx-5 text-xl bg-gray-700 rounded-full">
+                        <div
+                            class="flex flex-row items-center justify-center text-center gap-5 pr-6 rounded-md lg:bg-gray-700">
+                            <p class=" text-sm text-gray-400">SHARE</p>
+                            <img src="./images/icon-facebook.svg" alt="facebook logo" class="w-4 h-4">
+                            <img src="./images/icon-twitter.svg" alt="twitter logo" class="w-4 h-4">
+                            <img src="./images/icon-pinterest.svg" alt="pinterest logo" class="w-4 h-4">
+                        </div>
+                        <div>
+                            <button id="remove-btn" aria-labelledby="removebtnimg">
+                                <img id="removebtnimg" src="./images/icon-share.svg" alt="enter button"
+                                    class="my-2 w-8 h-8 p-2 bg-slate-200 rounded-full hover:border-b-2 hover:border-gray-900 hover:bg-slate-300">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <script src="./index.js"></script>
 </body>
 
